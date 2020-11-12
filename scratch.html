@@ -5,41 +5,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
 <style>
-.text1 {
-      margin: 5%;
+.text-custom {
       text-align: justify;
       }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: grey
-}
-.container:hover .overlay {
-  opacity: 1;
-}
-.container {
-  position: relative;
-  width: 100%;
-}
 .image {
   display: block;
   width: 100%;
@@ -57,63 +26,75 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.section-codi {
+    background-image: url("code2.png");
+    background-size: 100% 100%;
+}
 .section-pell {
     background-image: url("pell.png");
+    background-size: 100% 100%;
+}
+html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+    color: blue;
+}
+
+html, body, .container, .container-2, .text-div{
+    height: 100%;
+}
+
+.container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.text-div {
+display: table;
+height:100vh;
+vertical-align: middle;
+}
+.container-2 {
+display: table-cell;
+height:100vh;
+vertical-align: middle;
 }
 </style>
-<body onLoad="window.scroll(0, 10000)">
+<body>
 <div>
-    <a class="w3-right" href="scratch_2.html">About Project</a>
+    <img src="portada.png" alt="Portada" class="image">
 </div>
-<section class="w3-container w3-center w3-content">
-    <h1 class="w3-wide">CONTACTES</h1>
-    <h2 class="w3-wide">Subtítol</h2>
-</section>
-<div class="text1" style="background-color:#bbb;">
-  <p>We have created a fictional band website. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua.</p>
+<div>
+    <a class="w3-right" style="margin-top: 2%;margin-right: 5%;" href="scratch_2.html">About Project</a>
 </div>
-<div class="row">
-    <div class="column">
-        <div class="container">
-            <img src="code.png" alt="Codi" class="image">
-            <div class="overlay">
-                <div class="text">Aquí el text pel codi</div>
-            </div>
-        </div>
-    </div>
-    <div class="column">
-        <div class="container">
-            <img src="cel.png" alt="Cel" class="image">
-            <div class="overlay">
-                <div class="text">Aquí el text pel cel</div>
-            </div>
-        </div>
-    </div>
-    <div class="column">
-        <div class="container">
-            <img src="pell.png" alt="Pell" class="image">
-            <div class="overlay">
-                <div class="text">Aquí el text per la pell</div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <h2 class="w3-center center" style="margin-left: 15%;">Una reflexión sobre el contacto<br>moderno contemporáneo</h2>
 </div>
-<div class="w3-container w3-center w3-content" style="max-width:80%">
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-<section class="section-pell">
-    <p>HEY</p>
-</section>
-<section>
+<div>
     <video src="contactes.mov" width="100%" controls></video>
-</section>
+</div>
+<div class="container" style="margin-left: 20%; margin-right: 20%;">
+    Lo que antes era un proyecto para “toda la vida” hoy se ha convertido en un atributo del momento. Una vez diseñado, el futuro ya no es “para siempre”, sino que necesita ser montado y desmontado continuamente. Cada una de estas dos operaciones, aparentemente contradictorias, tiene una importancia equiparable y tiende a ser absorbente por igual.<br><br>
+       - Bauman, Z (2008) El arte de la vida
+</div>
+
+<div class="section-codi text-div" style="display: table-cell; color: white; margin: 30%">
+    <p style="margin-left: 20%; margin-right: 20%; font-size: 28px;">Somos <i>yonkis</i> de la vida <i>In Situ</i> y del <i>Carpe diem</i></p>
+        <div style="font-size: 15px; margin-left: 20%; margin-right: 20%;">Somos una sociedad nómada. Nos hemos acostumbrado a estar constantemente en movimiento, siempre con nuevos comienzos entre manos, nuevas oportunidades y pocos finales.  Queremos llegar a la meta de una manera inmediata, nos hemos vuelto cada vez más impacientes, Somos adictos a los comienzos.</div>
+</div>
+
+<div class="container" style="margin-left: 25%;margin-right: 45%;">Los celulares ayudan a estar conectados a los que están a distancia. Los celulares permiten a los que se conectan… mantenerse a distancia<br><br>
+    Zygmunt Bauman
+</div>
+<div class="section-pell container" style="font-size: 250%;">
+    <p>¿Qué me dices del contacto humano?</p>
+</div>
 </body>
 </html>
